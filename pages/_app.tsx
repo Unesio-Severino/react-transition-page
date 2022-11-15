@@ -1,13 +1,16 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import Navbar from '../components/Navbar';
+import "../styles/globals.css";
+import Navbar from "../Components/Navbar";
+import { AnimatePresence } from "framer-motion";
 
-export default function App({ Component, pageProps }: AppProps) {
-
-  return(
-    <div>
+function MyApp({ Component, pageProps, router }) {
+  return (
+    <div className="font-latoBold relative h-screen overflow-hidden py-20 px-12 lg:px-25">
       <Navbar />
-      <Component {...pageProps} />
+      <AnimatePresence initial={false}>
+        <Component key={router.pathname} {...pageProps} />
+      </AnimatePresence>
     </div>
   );
 }
+
+export default MyApp;
