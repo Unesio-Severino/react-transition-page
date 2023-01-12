@@ -2,7 +2,7 @@ import { AppProps } from 'next/app';
 import "../styles/globals.css";
 import Navbar from "../Components/Navbar";
 import { AnimatePresence } from "framer-motion";
-import router from 'next/router';
+import Router from 'next/router';
 import { useRouter } from "next/router";
 
 
