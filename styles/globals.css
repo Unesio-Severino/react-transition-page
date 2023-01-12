@@ -6,17 +6,14 @@
   font-family: "Archivo";
   src: url("../public/ArchivoBlack-Regular.ttf");
 }
-
 @font-face {
   font-family: "LatoLight";
   src: url("../public/Lato-Light.ttf");
 }
-
 @font-face {
   font-family: "LatoBold";
   src: url("../public/Lato-Bold.ttf");
 }
-
 @font-face {
   font-family: "LatoReg";
   src: url("../public/Lato-Regular.ttf");
